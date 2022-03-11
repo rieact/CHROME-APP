@@ -1,0 +1,125 @@
+.hidden {
+  display: none;
+}
+
+.bgimg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(90%);
+}
+
+.container {
+  padding: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+#clock {
+  font-size: 8rem;
+  color: #ffffff;
+}
+
+#login-form input[type="text"] {
+  margin-top: 5rem;
+  width: 19rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #ffffff;
+}
+
+#login-form input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, .8);
+}
+
+#login-form input[type="submit"] {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+#greeting {
+  margin-top: 5rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #ffffff;
+}
+
+#todo-form {
+  margin-top: 3rem;
+}
+
+#todo-form input[type="text"] {
+  width: 21rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#todo-form input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, .8);
+}
+
+#todo-list {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+#todo-list li {
+  position: relative;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+#todo-list li::after {
+  position: absolute;
+  bottom: -0.3rem;
+  left: calc(50% - 9rem);
+  display: inline-block;
+  width: 18rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  content: "";
+}
+
+#todo-list button {
+  margin-left: 2rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+#quote {
+  margin: 5rem 0 1rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+#quote span {
+  display: block;
+}
+
+#quote span:last-child {
+  margin-top: 1rem;
+}
+
+#weather {
+  float: right;
+  margin: 3rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, .8);
+  background-color: rgba(0, 0, 0, .3);
+}
+
+#weather span {
+  margin: 0 1rem;
+}
